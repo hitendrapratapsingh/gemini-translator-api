@@ -1,0 +1,50 @@
+# 🌍 Gemini Translator API (Node.js + Express)
+
+A simple and powerful **multilingual translation API** built using **Google Gemini (Generative AI)** and **Node.js (Express)**.
+
+This service allows you to translate any text from one language to another dynamically — using your **Google API Key**.
+
+---
+
+## 🚀 Features
+
+- Translate text between any two languages.
+- Clean and structured JSON output.
+- Accepts Google API key dynamically via request body.
+- Ready to test directly in **Postman**.
+- Built with simplicity and clarity for easy extension.
+
+---
+
+## 🛠️ Prerequisites
+
+Before starting, make sure you have:
+
+1. **Node.js** installed (v18+ recommended)
+2. A valid **Google Gemini API Key**
+
+You can create one here:  
+👉 [https://aistudio.google.com/app/apikey](https://aistudio.google.com/app/apikey)
+
+---
+
+## 📦 Installation
+
+Clone this project and install dependencies:
+
+```bash
+git clone https://github.com/yourusername/gemini-translator.git
+cd gemini-translator
+npm install
+
+
+
+curl --location 'http://localhost:3000/translate' \
+--header 'Content-Type: application/json' \
+--data '{
+  "apiKey": "AIzaSyAd9shdgsfkdkkjshdfjkhjkhfjkTHTEH0pdBAaJq0UYk0",
+  "text": "Belly button",
+  "sourceLang": "English",
+  "targetLang": "Hindi"
+}
+'
